@@ -1,0 +1,85 @@
+// General
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+p {
+    font-size: 1.2rem;
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8CBEBD;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #718D8C; 
+}
+
+// #Home
+#home {
+    margin: 20px;
+    background-image: url("../img/home-pizza-bg.jpg");
+    height: calc(100vh - 40px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed!important;
+}
+.jumbotron {
+    background: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#main-logo {
+    display: block;
+    margin: auto;
+    box-shadow: -1px -1px 5px 0px #565A5A, 1px 1px 5px 0px #565A5A;
+    animation: logo-in 1s ease-out 0s 1 forwards;
+}
+// logo transition
+@keyframes logo-in {
+    0%      {transform: scale(0); opacity: 0;}
+    100%    {transform: scale(0.8); opacity: 0.9;}
+}
+.round-border {
+    border-radius: 3px;
+}
+
+// #About
+#about {
+    margin: 20px;
+    background-image: url("../img/about-bg.jpg");
+    height: calc(100vh - 40px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed!important;
+}
+.bg-white {
+    background: #fff;
+}
+
+// #Menu
+#menu {
+    margin: 20px;
+    background-image: url("../img/menu-bg.jpg");
+    height: calc(100vh - 40px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed!important;
+}
