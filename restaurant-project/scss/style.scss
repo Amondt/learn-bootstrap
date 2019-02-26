@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     height: 100%;
     background: #fdfdfd;
+    overflow-x: hidden;
 }
 p {
     font-size: 1.2rem;
@@ -115,16 +116,20 @@ p {
 
 // #Restaurants
 #restaurants {
-    margin: 20px;
     background: #8CBEBD;
-    color: #fdfdfd;
+    color: #565A5A;
     img {
         object-fit: cover!important;
+        padding: .25rem;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #718D8C;
+        border-radius: .25rem;
+        max-width: 100%;
     }
     a {
         transition: .5s ease;
         text-decoration: none;
-        color: #fdfdfd;
+        color: #565A5A;
         p {
             font-size: 1.5em;
         }
@@ -134,7 +139,23 @@ p {
             opacity: 0.5;
         }
         p {
-            color: #000;
+            color: #A6EFEE;
         }
     }
+}
+
+// #Contact
+#contact {
+    background: #565A5A;
+    color: #fdfdfd;
+}
+#inputTextarea {
+    max-height: 150px;
+}
+#contact-logo {
+    display: block;
+    margin: auto;
+    border: 1px solid #718D8C;
+    border-radius: .25rem;
+    max-width: 100%;
 }

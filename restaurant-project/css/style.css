@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   height: 100%;
   background: #fdfdfd;
+  overflow-x: hidden;
 }
 
 p {
@@ -126,17 +127,21 @@ p {
 }
 
 #restaurants {
-  margin: 20px;
   background: #8CBEBD;
-  color: #fdfdfd;
+  color: #565A5A;
 }
 #restaurants img {
   object-fit: cover !important;
+  padding: 0.25rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #718D8C;
+  border-radius: 0.25rem;
+  max-width: 100%;
 }
 #restaurants a {
   transition: 0.5s ease;
   text-decoration: none;
-  color: #fdfdfd;
+  color: #565A5A;
 }
 #restaurants a p {
   font-size: 1.5em;
@@ -145,7 +150,24 @@ p {
   opacity: 0.5;
 }
 #restaurants a:hover p {
-  color: #000;
+  color: #A6EFEE;
+}
+
+#contact {
+  background: #565A5A;
+  color: #fdfdfd;
+}
+
+#inputTextarea {
+  max-height: 150px;
+}
+
+#contact-logo {
+  display: block;
+  margin: auto;
+  border: 1px solid #718D8C;
+  border-radius: 0.25rem;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
