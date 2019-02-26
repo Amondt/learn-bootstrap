@@ -1,1 +1,1 @@
-sass --watch ./restaurant-project/scss/style.scss ./restaurant-project/css/style.css
+sass --watch ./scss/style.scss ./css/style.css

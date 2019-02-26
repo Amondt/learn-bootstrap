@@ -4,20 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Restaurent</title>
+        <title>Mamma Mia restaurants</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         <script src="js/scripts.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
     <body>
         <!-- Home section -->
         <div id="home">
             <div class="container h-100">
                 <div class="jumbotron h-100">
-                    <img src="./img/mamma-mia-logo.png" alt="Mamma Mia logo" class='round-border' id='main-logo'>
+                    <img src="./img/mamma-mia-logo.png" alt="Mamma Mia logo" class='round-border img-fluid' id='main-logo'>
                 </div>
             </div>
         </div>
+        <!-- About section -->
         <div id="about">
             <div class="container-fluid bg-white">
                 <div class="row h-100 my-5">
@@ -29,11 +31,160 @@
                 </div>
             </div>
         </div>
+        <!-- Menu section -->
         <div id="menu">
             <div class="container-fluid h-100">
                 <div class="row d-flex flex-row-reverse h-100">
                     <div class="col-6 text-center bg-white my-5 ml-5 mr-4 round-border">
                         <h1 class="my-5">Notre Menu</h1>
+                        <iframe src="./menu.html" frameborder="0" id="iframeMenu" class="h-75"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery section -->
+        <div id="gallery" class="my-5 py-5">
+            <div class="container h-100">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal1.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="./img/gallery/gal1.jpg"
+                                    alt="pizza gallery 1">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal2.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal2.jpg"
+                                        alt="pizza gallery 2">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal3.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal3.jpg"
+                                        alt="pizza gallery 3">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal4.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal4.jpg"
+                                        alt="pizza gallery 4">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal5.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal5.jpg"
+                                        alt="pizza gallery 5">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal6.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal6.jpg"
+                                        alt="pizza gallery 6">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal7.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal7.jpg"
+                                        alt="pizza gallery 7">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal8.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal8.jpg"
+                                        alt="pizza gallery 8">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal9.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal9.jpg"
+                                        alt="pizza gallery 9">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="./img/gallery/gal10.jpg"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                        src="./img/gallery/gal10.jpg"
+                                        alt="pizza gallery 10">
+                            </a>
+                        </div>
+                        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                        </button>
+                
+                                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Restaurants section -->
+        <div id="restaurants" class="mt-5 h-100">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 text-center h-100">
+                        <h1 class="my-5">Nos restaurants</h1>
+                        <div class="col-12 d-flex justify-content-around">
+                            <a href="#">
+                                <img src="./img/brussels.jpg" alt="Brussels restaurant" width="150px" height="150px" class="round-border">
+                                <br>
+                                <p>Bruxelles</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/paris.jpg" alt="Paris restaurant" width="150px" height="150px" class="round-border">
+                                <br>
+                                <p>Paris</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/montreal.jpg" alt="Montreal restaurant" width="150px" height="150px" class="round-border">
+                                <br>
+                                <p>Montreal</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

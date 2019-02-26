@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background: #fdfdfd;
 }
 p {
     font-size: 1.2rem;
@@ -47,7 +48,6 @@ p {
 #main-logo {
     display: block;
     margin: auto;
-    box-shadow: -1px -1px 5px 0px #565A5A, 1px 1px 5px 0px #565A5A;
     animation: logo-in 1s ease-out 0s 1 forwards;
 }
 // logo transition
@@ -57,6 +57,7 @@ p {
 }
 .round-border {
     border-radius: 3px;
+    box-shadow: -1px -1px 5px 0px #565A5A, 1px 1px 5px 0px #565A5A;
 }
 
 // #About
@@ -70,16 +71,66 @@ p {
     background-attachment: fixed!important;
 }
 .bg-white {
-    background: #fff;
+    background: #fdfdfd;
 }
 
 // #Menu
 #menu {
-    margin: 20px;
+    margin: 50px 20px;
     background-image: url("../img/menu-bg.jpg");
     height: calc(100vh - 40px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed!important;
+}
+#iframeMenu {
+    width: 97%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+// #Gallery
+#gallery {
+    margin: 20px;
+}
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+#image-gallery .modal-footer{
+    display: block;
+}
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.img-thumbnail {
+    transition: .5s ease;
+}
+.img-thumbnail:hover {
+    opacity: 0.3;
+}
+
+// #Restaurants
+#restaurants {
+    margin: 20px;
+    background: #8CBEBD;
+    color: #fdfdfd;
+    img {
+        border-radius: 50%!important;
+        object-fit: cover!important;
+    }
+    a {
+        transition: .5s ease;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #fdfdfd;
+    }
+    a:hover {
+        img {
+            opacity: 0.5;
+        }
+    }
 }
