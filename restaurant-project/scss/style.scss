@@ -148,6 +148,10 @@ p {
 #contact {
     background: #565A5A;
     color: #fdfdfd;
+    a {
+        transform: scale(4);
+        color: #fdfdfd;
+    }
 }
 #inputTextarea {
     max-height: 150px;
