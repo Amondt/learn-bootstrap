@@ -124,12 +124,17 @@ p {
     a {
         transition: .5s ease;
         text-decoration: none;
-        font-size: 1.5em;
         color: #fdfdfd;
+        p {
+            font-size: 1.5em;
+        }
     }
     a:hover {
         img {
             opacity: 0.5;
+        }
+        p {
+            color: #000;
         }
     }
 }

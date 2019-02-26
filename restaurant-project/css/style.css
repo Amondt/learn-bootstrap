@@ -136,11 +136,16 @@ p {
 #restaurants a {
   transition: 0.5s ease;
   text-decoration: none;
-  font-size: 1.5em;
   color: #fdfdfd;
+}
+#restaurants a p {
+  font-size: 1.5em;
 }
 #restaurants a:hover img {
   opacity: 0.5;
+}
+#restaurants a:hover p {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
