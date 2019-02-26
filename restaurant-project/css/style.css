@@ -131,7 +131,6 @@ p {
   color: #fdfdfd;
 }
 #restaurants img {
-  border-radius: 50% !important;
   object-fit: cover !important;
 }
 #restaurants a {
