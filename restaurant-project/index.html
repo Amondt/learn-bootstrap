@@ -7,10 +7,53 @@
         <title>Mamma Mia restaurants</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
-        <script src="js/scripts.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body>
+        <nav id="mainNavbar" class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+            <!-- Brand -->
+            <a href="#home" class="navbar-brand ml-1">
+                <img src="./img/mamma-mia-logo-xs.png" width="30" class="d-inline-block align-center rounded" alt="Mamma Mia logo">
+                Mamma Mia
+            </a>
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon mr-1"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul id="navbarElements" class="navbar-nav ml-auto mr-2">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active" href="#home">home</a>
+                    </li>
+                    <i class="fas fa-circle navbar-text"></i>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#about">a propos</a>
+                    </li>
+                    <i class="fas fa-circle navbar-text"></i>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#menu">menu</a>
+                    </li>
+                    <i class="fas fa-circle navbar-text"></i>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#gallery">gallerie</a>
+                    </li>
+                    <i class="fas fa-circle navbar-text"></i>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#restaurants">restaurants</a>
+                    </li>
+                    <i class="fas fa-circle navbar-text"></i>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- Home section -->
         <div id="home">
             <div class="container h-100">
@@ -268,9 +311,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Copyright -->
     </body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+
 </html>
