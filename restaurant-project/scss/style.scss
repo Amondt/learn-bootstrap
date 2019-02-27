@@ -54,7 +54,7 @@ p {
 // logo transition
 @keyframes logo-in {
     0%      {transform: scale(0); opacity: 0;}
-    100%    {transform: scale(0.8); opacity: 0.9;}
+    100%    {transform: scale(1.2); opacity: 0.9;}
 }
 .round-border {
     border-radius: 3px;
@@ -149,12 +149,18 @@ p {
     background: #565A5A;
     color: #fdfdfd;
     a {
-        transform: scale(4);
         color: #fdfdfd;
+    }
+    a:hover {
+        color: #718D8C;
+    }
+    i {
+        font-size: 3.8rem;
     }
 }
 #inputTextarea {
     max-height: 150px;
+    min-height: 50px;
 }
 #contact-logo {
     display: block;
@@ -162,4 +168,19 @@ p {
     border: 1px solid #718D8C;
     border-radius: .25rem;
     max-width: 100%;
+}
+
+// Footer
+footer {
+    background: #565A5A;
+    color: #fdfdfd;
+    font-size: 0.8rem;
+    text-decoration: none;
+    a {
+        color: #fdfdfd;
+    }
+    a:hover {
+        color: #718D8C;
+        text-decoration: none;
+    }
 }

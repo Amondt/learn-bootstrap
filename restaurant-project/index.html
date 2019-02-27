@@ -15,7 +15,7 @@
         <div id="home">
             <div class="container h-100">
                 <div class="jumbotron h-100">
-                    <img src="./img/mamma-mia-logo.png" alt="Mamma Mia logo" class='round-border img-fluid' id='main-logo'>
+                    <img src="./img/mamma-mia-logo-small.png" alt="Mamma Mia logo" class='round-border img-fluid' id='main-logo'>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@
             </div>
         </div>
         <!-- Restaurants section -->
-        <div id="restaurants" class="mt-5 h-75">
+        <div id="restaurants" class="mt-5 h-100">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -190,23 +190,23 @@
             </div>
         </div>
         <!-- Contact section -->
-        <div id="contact" class="pb-5 h-75">
+        <div id="contact" class="pb-5">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-12 h-100">
                         <h1 class="my-5 text-center">Nous contacter</h1>
                         <div class="row">
                             <div class="col-6">
-                                <div class="row mt-2 mb-5 pb-3">
+                                <div class="row mt-2">
                                     <div class="col">
-                                        <img src="./img/mamma-mia-logo-small.png" alt="Mamma Mia logo" class='round-border img-fluid' id="contact-logo">
+                                        <img src="./img/mamma-mia-logo-small.png" alt="Mamma Mia logo" class='round-border img-fluid mt-3' id="contact-logo">
                                     </div>
                                 </div>
-                                <div class="row mt-5">
-                                    <div class="col-12 d-flex justify-content-around">
-                                        <a href="#" class="mx-5"><i class="fab fa-facebook"></i></a>
-                                        <a href="#" class="mx-3"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class="mx-5"><i class="fab fa-twitter-square"></i></a>
+                                <div class="row mt-3">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+                                        <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="mx-2"><i class="fab fa-twitter-square"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -214,16 +214,21 @@
                                 <form>
                                     <div class="form-row">
                                         <div class="col">
-                                            <label for="inputName">Nom</label>
-                                            <input type="text" class="form-control" id="inputName" placeholder="Nom">
+                                            <label for="inputLastName"></label>
+                                            <input type="text" class="form-control" id="inputLastName" placeholder="Nom">
                                         </div>
                                         <div class="col">
-                                            <label for="inputEmail">Email</label>
-                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                            <label for="inputFirstName"></label>
+                                            <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom">
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col mt-3">
+                                        <div class="col-7 mt-1">
+                                                <label for="inputEmail"></label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                            </div>
+                                        <div class="col-5 mt-1">
+                                            <label for="inputSelect"></label>
                                             <select class="custom-select" id="inputSelect">
                                                 <option selected>Veuillez choisir</option>
                                                 <option value="1">One</option>
@@ -233,13 +238,13 @@
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col mt-3">
-                                            <label for="inputTextarea">Message</label>
+                                        <div class="col mt-1">
+                                            <label for="inputTextarea"></label>
                                             <textarea class="form-control" id="inputTextarea" rows="3" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col-12 mt-3">
+                                        <div class="col-12 mt-4">
                                             <button type="submit" class="btn btn-secondary btn-block">Envoyer</button>
                                         </div>
                                     </div>
@@ -250,6 +255,20 @@
                 </div>
             </div>
         </div>
+        <!-- Copyright -->
+        <footer>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col footer-copyright text-center">
+                        © 2019 Copyright: Mamma Mia
+                    </div>
+                    <div class="col footer-copyright text-center">
+                        par <a href="https://github.com/Amondt" target="_blank">A. Mondt</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright -->
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

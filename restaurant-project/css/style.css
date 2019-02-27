@@ -60,7 +60,7 @@ p {
     opacity: 0;
   }
   100% {
-    transform: scale(0.8);
+    transform: scale(1.2);
     opacity: 0.9;
   }
 }
@@ -158,12 +158,18 @@ p {
   color: #fdfdfd;
 }
 #contact a {
-  transform: scale(4);
   color: #fdfdfd;
+}
+#contact a:hover {
+  color: #718D8C;
+}
+#contact i {
+  font-size: 3.8rem;
 }
 
 #inputTextarea {
   max-height: 150px;
+  min-height: 50px;
 }
 
 #contact-logo {
@@ -172,6 +178,20 @@ p {
   border: 1px solid #718D8C;
   border-radius: 0.25rem;
   max-width: 100%;
+}
+
+footer {
+  background: #565A5A;
+  color: #fdfdfd;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+footer a {
+  color: #fdfdfd;
+}
+footer a:hover {
+  color: #718D8C;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
