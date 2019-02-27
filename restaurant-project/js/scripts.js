@@ -1,35 +1,57 @@
 window.onload = () => {
 
     // Navbar scripts
+    const navbar = document.querySelector('#mainNavbar')
+    
     const home = document.querySelector('#home')
     const about = document.querySelector('#about')
     const menu = document.querySelector('#menu')
     const gallery = document.querySelector('#gallery')
     const restaurants = document.querySelector('#restaurants')
     const contact = document.querySelector('#contact')
-    const navbar = document.querySelector('#mainNavbar')
+
+    const navHome = document.querySelector('#navHome')
+    const navAbout = document.querySelector('#navAbout')
+    const navMenu = document.querySelector('#navMenu')
+    const navGallery = document.querySelector('#navGallery')
+    const navRestaurants = document.querySelector('#navRestaurants')
+    const navContact = document.querySelector('#navContact')
 
     document.body.addEventListener('scroll', function(e) {
+        console.log()
         if (e.target.scrollTop > 300) {
             navbar.style.top = '0px'
         } else if (e.target.scrollTop <= 300) {
-            navbar.style.top = '-60px'
+            navbar.style.top = '-64px'
         }
-        if (e.target.scrollTop > about.offsetTop) {
-            console.log('test')
+        if (e.target.scrollTop >= (e.target.scrollHeight - (e.target.offsetHeight)*1.2)) {
+            $(".navbar-nav").find(".active").removeClass("active")
+            navContact.classList.add("active")
+        } else if (e.target.scrollTop >= home.offsetTop && e.target.scrollTop < (about.offsetTop -64)) {
+            $(".navbar-nav").find(".active").removeClass("active")
+            navHome.classList.add("active")
+        } else if (e.target.scrollTop >= (about.offsetTop - 64) && e.target.scrollTop < (menu.offsetTop-64)) {
+            $(".navbar-nav").find(".active").removeClass("active")
+            navAbout.classList.add("active")
+        } else if (e.target.scrollTop >= (menu.offsetTop-64) && e.target.scrollTop < (gallery.offsetTop-64)) {
+            $(".navbar-nav").find(".active").removeClass("active")
+            navMenu.classList.add("active")
+        } else if (e.target.scrollTop >= (gallery.offsetTop-64) && e.target.scrollTop < (restaurants.offsetTop-64)) {
+            $(".navbar-nav").find(".active").removeClass("active")
+            navGallery.classList.add("active")
+        } else if (e.target.scrollTop >= (restaurants.offsetTop-64)) {
+            $(".navbar-nav").find(".active").removeClass("active")
+            navRestaurants.classList.add("active")
         }
-        // if ()
-        // $(".navbar-nav").find(".active").removeClass("active")
-        // console.log(document.querySelector('#navbarElements').childNodes[1])
     })
     
 
     $(".navbar-nav .nav-link").on("click", function(){
         $(".navbar-nav").find(".active").removeClass("active")
         $(this).addClass("active")
-        console.log('menu choice')
     })
 
+    // Gallery
     let modalId = $('#image-gallery')
 
     $(document).ready(function () {
