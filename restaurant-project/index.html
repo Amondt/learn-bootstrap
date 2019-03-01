@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <script src="./js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/scripts.js"></script>
     </head>
     <body>
         <nav id="mainNavbar" class="navbar navbar-expand-md bg-white navbar-light fixed-top">
@@ -226,22 +226,22 @@
         </div>
         <!-- Restaurants section -->
         <div id="restaurants" class="mt-5 h-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 text-center h-100">
                         <h1 class="my-5">Nos restaurants</h1>
-                        <div class="col-12 d-flex justify-content-around">
-                            <a href="#">
+                        <div class="col-12 d-flex justify-content-around align-items-center h-75">
+                            <a id="brussels" href="#">
                                 <img src="./img/brussels.jpg" alt="Brussels restaurant" width="150px" height="150px">
                                 <br>
                                 <p>Bruxelles</p>
                             </a>
-                            <a href="#">
+                            <a id="paris" href="#">
                                 <img src="./img/paris.jpg" alt="Paris restaurant" width="150px" height="150px">
                                 <br>
                                 <p>Paris</p>
                             </a>
-                            <a href="#">
+                            <a id="montreal" href="#">
                                 <img src="./img/montreal.jpg" alt="Montreal restaurant" width="150px" height="150px">
                                 <br>
                                 <p>Montreal</p>
@@ -331,4 +331,15 @@
             </div>
         </footer>
     </body>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5httYNMtdI3Hgvjw1SmlmuP6U1tZd_1Y&callback=initMap" type="text/javascript"></script>
+    <script>
+        function initMap() {
+            // 50.850863, 4.347816
+            var location = {lat: 50.850863, lng: 4.347816}
+            var map = new google.maps.Map(document.querySelector('#map'), {
+                zoom: 18,
+                center: location
+            })
+        }
+    </script>
 </html>
