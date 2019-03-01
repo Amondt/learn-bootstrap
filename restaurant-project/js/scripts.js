@@ -141,10 +141,10 @@ window.onload = () => {
     // Header restaurant pages display
     function imagesLinkHeader (container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row mb-5')
+        row.setAttribute('class', 'row')
 
         const col = document.createElement('div')
-        col.setAttribute('class', 'col')
+        col.setAttribute('class', 'col-12')
 
         const linkB = document.createElement('a')
         linkB.id = "brussels"
@@ -176,6 +176,18 @@ window.onload = () => {
         montreal.style.width = "70px"
         montreal.style.height = "70px"
 
+        const colDate = document.createElement('div')
+        colDate.setAttribute('class', 'col-12 text-center mt-4')
+        // Date insert
+        const openClose = "ouvert"
+        var d = new Date()
+        var months = ["janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre"];
+        const pDate = document.createElement('p')
+        pDate.textContent = "nous sommes le " + d.getDate() + " " + months[d.getMonth()]
+        testOpenClose(openClose)
+        const pOpCl = document.createElement('p')
+        pOpCl.textContent = "le restaurant est " + openClose
+
         linkB.appendChild(brussels)
         linkP.appendChild(paris)
         linkM.appendChild(montreal)
@@ -183,12 +195,37 @@ window.onload = () => {
         col.appendChild(linkB)
         col.appendChild(linkP)
         col.appendChild(linkM)
+        colDate.appendChild(pDate)
+        colDate.appendChild(pOpCl)
 
         row.appendChild(col)
+        row.appendChild(colDate)
 
         container.appendChild(row)
 
+        setInterval(function () {
+            testOpenClose(openClose)
+            pOpCl.textContent = "le restaurant est " + openClose
+        }, 50)
+
         return container
+    }
+    function testOpenClose (openClose) {
+        var d = new Date()
+        if (d.getDay() >= 1 && d.getDay() <= 5) {
+            if ((d.getHours() >= 12 && d.getHours() <= 15) || (d.getHours() >= 19 && d.getHours() <= 23)) {
+                openClose = "ouvert"
+            } else {
+                openClose = "fermé"
+            }
+        } else if (d.getDay() == 6) {
+            if (d.getHours() >= 19 && d.getHours() <= 23) {
+                openClose = "ouvert"
+            } else {
+                openClose = "fermé"
+            }
+        }
+        return openClose
     }
 
     // Brussels displays
@@ -276,14 +313,14 @@ window.onload = () => {
         h3Midi.textContent = "Midi"
         h3Midi.setAttribute('class', 'text-left')
         const pMidi = document.createElement('p')
-        pMidi.textContent = "lundi au vendredi, de 11h30 à 14h30"
+        pMidi.textContent = "lundi au vendredi, de 12h00 à 15h00"
         pMidi.setAttribute('class', 'text-left')
 
         const h3Soir = document.createElement('h3')
         h3Soir.textContent = "Soir"
         h3Soir.setAttribute('class', 'text-left')
         const pSoir = document.createElement('p')
-        pSoir.textContent = "lundi à samedi, de 18h30 à 22h30"
+        pSoir.textContent = "lundi à samedi, de 19h00 à 23h00"
         pSoir.setAttribute('class', 'text-left')
 
         // appends on Html
@@ -421,14 +458,14 @@ window.onload = () => {
         h3Midi.textContent = "Midi"
         h3Midi.setAttribute('class', 'text-left')
         const pMidi = document.createElement('p')
-        pMidi.textContent = "lundi au vendredi, de 11h30 à 14h30"
+        pMidi.textContent = "lundi au vendredi, de 12h00 à 15h00"
         pMidi.setAttribute('class', 'text-left')
 
         const h3Soir = document.createElement('h3')
         h3Soir.textContent = "Soir"
         h3Soir.setAttribute('class', 'text-left')
         const pSoir = document.createElement('p')
-        pSoir.textContent = "lundi à samedi, de 18h30 à 22h30"
+        pSoir.textContent = "lundi à samedi, de 19h00 à 23h00"
         pSoir.setAttribute('class', 'text-left')
 
         // appends on Html
@@ -566,14 +603,14 @@ window.onload = () => {
         h3Midi.textContent = "Midi"
         h3Midi.setAttribute('class', 'text-left')
         const pMidi = document.createElement('p')
-        pMidi.textContent = "lundi au vendredi, de 11h30 à 14h30"
+        pMidi.textContent = "lundi au vendredi, de 12h00 à 15h00"
         pMidi.setAttribute('class', 'text-left')
 
         const h3Soir = document.createElement('h3')
         h3Soir.textContent = "Soir"
         h3Soir.setAttribute('class', 'text-left')
         const pSoir = document.createElement('p')
-        pSoir.textContent = "lundi à samedi, de 18h30 à 22h30"
+        pSoir.textContent = "lundi à samedi, de 19h00 à 23h00"
         pSoir.setAttribute('class', 'text-left')
 
         // appends on Html
