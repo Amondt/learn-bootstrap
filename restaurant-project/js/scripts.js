@@ -219,7 +219,7 @@ window.onload = () => {
 
         // left col js init
         const colLeft = document.createElement('div')
-        colLeft.setAttribute('class', 'col-6')
+        colLeft.setAttribute('class', 'col-12 col-sm-6 mt-4')
 
         const rowLeft = document.createElement('div')
         rowLeft.setAttribute('class', 'row')
@@ -257,7 +257,7 @@ window.onload = () => {
 
         // right col js init
         const colRight = document.createElement('div')
-        colRight.setAttribute('class', 'col-6')
+        colRight.setAttribute('class', 'col-12 col-sm-6 mt-4')
 
         const rowRight = document.createElement('div')
         rowRight.setAttribute('class', 'row')
@@ -318,7 +318,7 @@ window.onload = () => {
     }
     function mapBrussels(container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row mt-5')
+        row.setAttribute('class', 'row my-4')
 
         const col = document.createElement('div')
         col.setAttribute('class', 'col')
@@ -364,7 +364,7 @@ window.onload = () => {
 
         // left col js init
         const colLeft = document.createElement('div')
-        colLeft.setAttribute('class', 'col-6')
+        colLeft.setAttribute('class', 'col-12 col-sm-6 mt-4')
 
         const rowLeft = document.createElement('div')
         rowLeft.setAttribute('class', 'row')
@@ -402,7 +402,7 @@ window.onload = () => {
 
         // right col js init
         const colRight = document.createElement('div')
-        colRight.setAttribute('class', 'col-6')
+        colRight.setAttribute('class', 'col-12 col-sm-6 mt-4')
 
         const rowRight = document.createElement('div')
         rowRight.setAttribute('class', 'row')
@@ -461,15 +461,15 @@ window.onload = () => {
 
         return container
     }
-    function mapBrussels(container) {
+    function mapParis(container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row mt-5')
+        row.setAttribute('class', 'row my-4')
 
         const col = document.createElement('div')
         col.setAttribute('class', 'col')
 
         const mapFrame = document.createElement('iframe')
-        mapFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.7340750526905!2d4.34726882925014!3d50.85086384541537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUxJzAzLjEiTiA0wrAyMCc1Mi4xIkU!5e0!3m2!1sfr!2sbe!4v1551443866086"
+        mapFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.4280134683596!2d2.348912829262897!3d48.844630881290634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUwJzQwLjciTiAywrAyMCc1OC4xIkU!5e0!3m2!1sfr!2sbe!4v1551445748507"
         mapFrame.id = "map"
         mapFrame.width = "600"
         mapFrame.frameborder = "0"
@@ -482,7 +482,7 @@ window.onload = () => {
     }
 
     // Montreal displays
-    function brusselsDisplay(e) {
+    function montrealDisplay(e) {
         e.preventDefault()
         insideRestaurantsDiv.lastElementChild.remove()
 
@@ -493,23 +493,23 @@ window.onload = () => {
         imagesLinkHeader(container)
 
         // PLace | Shifts
-        infosRestaurantBrussels(container)
+        infosRestaurantMontreal(container)
 
         // Google map api
-        mapBrussels(container)
+        mapMontreal(container)
         
         insideRestaurantsDiv.appendChild(container)
         document.querySelector('#montreal').removeEventListener('click', montrealDisplay)
         document.querySelector('#brussels').addEventListener('click', brusselsDisplay)
         document.querySelector('#paris').addEventListener('click', parisDisplay)
     }
-    function infosRestaurantBrussels(container) {
+    function infosRestaurantMontreal(container) {
         const row = document.createElement('div')
         row.setAttribute('class', 'row')
 
         // left col js init
         const colLeft = document.createElement('div')
-        colLeft.setAttribute('class', 'col-6')
+        colLeft.setAttribute('class', 'col-12 col-sm-6 mt-4')
 
         const rowLeft = document.createElement('div')
         rowLeft.setAttribute('class', 'row')
@@ -525,10 +525,10 @@ window.onload = () => {
         colLeftLocation.setAttribute('class', 'col-10')
 
         const h3MM = document.createElement('h3')
-        h3MM.textContent = "Mamma Mia | Bruxelles"
+        h3MM.textContent = "Mamma Mia | Montreal"
         h3MM.setAttribute('class', 'text-left')
         const pAdress = document.createElement('p')
-        pAdress.textContent = "Place Sainte-Catherine 8, 1000 Bruxelles"
+        pAdress.textContent = "Boulevard Robert-Bourassa 1165, Montréal, QC H3B 1S5"
         pAdress.setAttribute('class', 'text-left')
 
         const colLeftPhoneI = document.createElement('div')
@@ -542,12 +542,12 @@ window.onload = () => {
         colLeftPhone.setAttribute('class', 'col-10')
 
         const h3Phone = document.createElement('h3')
-        h3Phone.textContent = "+32 495 56 65 74"
+        h3Phone.textContent = "+1-438-555-5555"
         h3Phone.setAttribute('class', 'text-left')
 
         // right col js init
         const colRight = document.createElement('div')
-        colRight.setAttribute('class', 'col-6')
+        colRight.setAttribute('class', 'col-12 col-sm-6 mt-4')
 
         const rowRight = document.createElement('div')
         rowRight.setAttribute('class', 'row')
@@ -606,15 +606,15 @@ window.onload = () => {
 
         return container
     }
-    function mapBrussels(container) {
+    function mapMontreal(container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row mt-5')
+        row.setAttribute('class', 'row my-4')
 
         const col = document.createElement('div')
         col.setAttribute('class', 'col')
 
         const mapFrame = document.createElement('iframe')
-        mapFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.7340750526905!2d4.34726882925014!3d50.85086384541537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUxJzAzLjEiTiA0wrAyMCc1Mi4xIkU!5e0!3m2!1sfr!2sbe!4v1551443866086"
+        mapFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1289.4172012992192!2d-73.56746920918765!3d45.50228229616133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMwJzA4LjciTiA3M8KwMzQnMDQuNCJX!5e1!3m2!1sfr!2sbe!4v1551446367992"
         mapFrame.id = "map"
         mapFrame.width = "600"
         mapFrame.frameborder = "0"

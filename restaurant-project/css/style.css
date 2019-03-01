@@ -179,6 +179,19 @@ p {
   border: 1px solid #718D8C;
 }
 
+#restaurantChoice {
+  height: 70vh;
+}
+
+@media only screen and (max-width: 575px) {
+  #restaurantChoice {
+    height: auto;
+  }
+
+  #restaurants .container {
+    padding: 12px;
+  }
+}
 #contact {
   background: #565A5A;
   color: #fdfdfd;
