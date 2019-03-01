@@ -132,7 +132,7 @@ window.onload = () => {
     })
 
     // Restaurants
-    const insideRestaurantsDiv = document.querySelector('#restaurants').firstElementChild.firstElementChild.childNodes[1]
+    const insideRestaurantsDiv = document.querySelector('#restoContainer')
 
     document.querySelector('#brussels').addEventListener('click', brusselsDisplay)
     document.querySelector('#paris').addEventListener('click', parisDisplay)
@@ -219,7 +219,7 @@ window.onload = () => {
 
         // left col js init
         const colLeft = document.createElement('div')
-        colLeft.setAttribute('class', 'col-12 col-sm-6 mt-4')
+        colLeft.setAttribute('class', 'col-12 col-md-6 mt-4')
 
         const rowLeft = document.createElement('div')
         rowLeft.setAttribute('class', 'row')
@@ -257,7 +257,7 @@ window.onload = () => {
 
         // right col js init
         const colRight = document.createElement('div')
-        colRight.setAttribute('class', 'col-12 col-sm-6 mt-4')
+        colRight.setAttribute('class', 'col-12 col-md-6 mt-4')
 
         const rowRight = document.createElement('div')
         rowRight.setAttribute('class', 'row')
@@ -364,7 +364,7 @@ window.onload = () => {
 
         // left col js init
         const colLeft = document.createElement('div')
-        colLeft.setAttribute('class', 'col-12 col-sm-6 mt-4')
+        colLeft.setAttribute('class', 'col-12 col-md-6 mt-4')
 
         const rowLeft = document.createElement('div')
         rowLeft.setAttribute('class', 'row')
@@ -402,7 +402,7 @@ window.onload = () => {
 
         // right col js init
         const colRight = document.createElement('div')
-        colRight.setAttribute('class', 'col-12 col-sm-6 mt-4')
+        colRight.setAttribute('class', 'col-12 col-md-6 mt-4')
 
         const rowRight = document.createElement('div')
         rowRight.setAttribute('class', 'row')
@@ -509,7 +509,7 @@ window.onload = () => {
 
         // left col js init
         const colLeft = document.createElement('div')
-        colLeft.setAttribute('class', 'col-12 col-sm-6 mt-4')
+        colLeft.setAttribute('class', 'col-12 col-md-6 mt-4')
 
         const rowLeft = document.createElement('div')
         rowLeft.setAttribute('class', 'row')
@@ -547,7 +547,7 @@ window.onload = () => {
 
         // right col js init
         const colRight = document.createElement('div')
-        colRight.setAttribute('class', 'col-12 col-sm-6 mt-4')
+        colRight.setAttribute('class', 'col-12 col-md-6 mt-4')
 
         const rowRight = document.createElement('div')
         rowRight.setAttribute('class', 'row')
@@ -625,4 +625,7 @@ window.onload = () => {
 
         return container
     }
+
+    var name = prompt('Bonjour, quel est votre nom ?')
+    document.querySelector('#name').textContent = "Bonjour " + name
 }

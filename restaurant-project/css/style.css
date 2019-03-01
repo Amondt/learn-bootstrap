@@ -35,6 +35,13 @@ p {
   background: #718D8C;
 }
 
+#name {
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #mainNavbar {
   transition: top 0.5s;
   top: -60px;
