@@ -186,7 +186,7 @@ window.onload = () => {
         pDate.textContent = "nous sommes le " + d.getDate() + " " + months[d.getMonth()]
         testOpenClose(openClose)
         const pOpCl = document.createElement('p')
-        pOpCl.textContent = "le restaurant est " + openClose
+        pOpCl.textContent = "le re  staurant est " + openClose
 
         linkB.appendChild(brussels)
         linkP.appendChild(paris)

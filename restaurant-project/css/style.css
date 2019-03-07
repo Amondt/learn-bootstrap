@@ -40,11 +40,12 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  color: #fefefe;
 }
 
 #mainNavbar {
   transition: top 0.5s;
-  top: -60px;
+  top: -64px;
 }
 #mainNavbar i {
   display: flex;
@@ -59,7 +60,7 @@ p {
   }
 }
 #home {
-  margin: 20px;
+  margin: 0 0 20px 0;
   background-image: url("../img/home-pizza-bg.jpg");
   height: calc(100vh - 40px);
   background-position: center;
@@ -112,6 +113,7 @@ p {
 
 #menu {
   margin: 50px 20px;
+  padding-top: 64px !important;
   background-image: url("../img/menu-bg.jpg");
   height: calc(100vh - 40px);
   background-position: center;
@@ -129,6 +131,7 @@ p {
 
 #gallery {
   margin: 20px;
+  padding-top: 64px !important;
 }
 
 .btn:focus, .btn:active, button:focus, button:active {
@@ -156,6 +159,7 @@ p {
 #restaurants {
   background: #8CBEBD;
   color: #565A5A;
+  padding-top: 30px;
 }
 #restaurants img {
   object-fit: cover !important;
@@ -200,6 +204,7 @@ p {
   }
 }
 #contact {
+  padding-top: 30px;
   background: #565A5A;
   color: #fdfdfd;
 }
