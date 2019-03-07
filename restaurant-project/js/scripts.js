@@ -262,10 +262,10 @@ window.onload = () => {
         rowLeft.setAttribute('class', 'row')
 
         const colLeftIcon = document.createElement('div')
-        colLeftIcon.setAttribute('class', 'col-2')
+        colLeftIcon.setAttribute('class', 'col-2 text-left')
 
         const iLocation = document.createElement('i')
-        iLocation.setAttribute('class', "fas fa-map-marker-alt text-center mt-1")
+        iLocation.setAttribute('class', "fas fa-map-marker-alt mt-1")
         iLocation.style.fontSize = '2.5rem'
 
         const colLeftLocation = document.createElement('div')
@@ -273,16 +273,16 @@ window.onload = () => {
 
         const h3MM = document.createElement('h3')
         h3MM.textContent = "Mamma Mia | Bruxelles"
-        h3MM.setAttribute('class', 'text-left')
+        h3MM.setAttribute('class', 'text-right')
         const pAdress = document.createElement('p')
         pAdress.textContent = "Place Sainte-Catherine 8, 1000 Bruxelles"
-        pAdress.setAttribute('class', 'text-left')
+        pAdress.setAttribute('class', 'text-right')
 
         const colLeftPhoneI = document.createElement('div')
-        colLeftPhoneI.setAttribute('class', 'col-2')
+        colLeftPhoneI.setAttribute('class', 'col-2  text-left')
 
         const iPhone = document.createElement('i')
-        iPhone.setAttribute('class', "fas fa-phone text-center mt-1")
+        iPhone.setAttribute('class', "fas fa-phone mt-1")
         iPhone.style.fontSize = '2rem'
 
         const colLeftPhone = document.createElement('div')
@@ -290,7 +290,7 @@ window.onload = () => {
 
         const h3Phone = document.createElement('h3')
         h3Phone.textContent = "+32 495 56 65 74"
-        h3Phone.setAttribute('class', 'text-left')
+        h3Phone.setAttribute('class', 'text-right')
 
         // right col js init
         const colRight = document.createElement('div')
@@ -300,10 +300,10 @@ window.onload = () => {
         rowRight.setAttribute('class', 'row')
 
         const colRightIcon = document.createElement('div')
-        colRightIcon.setAttribute('class', 'col-2')
+        colRightIcon.setAttribute('class', 'col-2 text-right')
 
         const iShifts = document.createElement('i')
-        iShifts.setAttribute('class', "far fa-clock text-center mt-1")
+        iShifts.setAttribute('class', "far fa-clock mt-1")
         iShifts.style.fontSize = '2.5rem'
 
         const colRightShifts = document.createElement('div')
@@ -331,15 +331,15 @@ window.onload = () => {
 
         // Left part appends | location - phone
         colLeft.appendChild(rowLeft)
-        rowLeft.appendChild(colLeftIcon)
-        colLeftIcon.appendChild(iLocation)
         rowLeft.appendChild(colLeftLocation)
         colLeftLocation.appendChild(h3MM)
         colLeftLocation.appendChild(pAdress)
-        rowLeft.appendChild(colLeftPhoneI)
-        colLeftPhoneI.appendChild(iPhone)
+        rowLeft.appendChild(colLeftIcon)
+        colLeftIcon.appendChild(iLocation)
         rowLeft.appendChild(colLeftPhone)
         colLeftPhone.appendChild(h3Phone)
+        rowLeft.appendChild(colLeftPhoneI)
+        colLeftPhoneI.appendChild(iPhone)
 
         // Right part appends | shifts
         colRight.appendChild(rowRight)
@@ -355,7 +355,7 @@ window.onload = () => {
     }
     function mapBrussels(container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row my-4')
+        row.setAttribute('class', 'row mt-4 mb-5 pb-4')
 
         const col = document.createElement('div')
         col.setAttribute('class', 'col')
@@ -407,10 +407,10 @@ window.onload = () => {
         rowLeft.setAttribute('class', 'row')
 
         const colLeftIcon = document.createElement('div')
-        colLeftIcon.setAttribute('class', 'col-2')
+        colLeftIcon.setAttribute('class', 'col-2 text-left')
 
         const iLocation = document.createElement('i')
-        iLocation.setAttribute('class', "fas fa-map-marker-alt text-center mt-1")
+        iLocation.setAttribute('class', "fas fa-map-marker-alt mt-1")
         iLocation.style.fontSize = '2.5rem'
 
         const colLeftLocation = document.createElement('div')
@@ -418,16 +418,16 @@ window.onload = () => {
 
         const h3MM = document.createElement('h3')
         h3MM.textContent = "Mamma Mia | Paris"
-        h3MM.setAttribute('class', 'text-left')
+        h3MM.setAttribute('class', 'text-right')
         const pAdress = document.createElement('p')
         pAdress.textContent = "Place de la Contrescarpe 2, 75005 Paris"
-        pAdress.setAttribute('class', 'text-left')
+        pAdress.setAttribute('class', 'text-right')
 
         const colLeftPhoneI = document.createElement('div')
-        colLeftPhoneI.setAttribute('class', 'col-2')
+        colLeftPhoneI.setAttribute('class', 'col-2 text-left')
 
         const iPhone = document.createElement('i')
-        iPhone.setAttribute('class', "fas fa-phone text-center mt-1")
+        iPhone.setAttribute('class', "fas fa-phone mt-1")
         iPhone.style.fontSize = '2rem'
 
         const colLeftPhone = document.createElement('div')
@@ -435,7 +435,7 @@ window.onload = () => {
 
         const h3Phone = document.createElement('h3')
         h3Phone.textContent = "+33 1 23 45 67 89"
-        h3Phone.setAttribute('class', 'text-left')
+        h3Phone.setAttribute('class', 'text-right')
 
         // right col js init
         const colRight = document.createElement('div')
@@ -445,10 +445,10 @@ window.onload = () => {
         rowRight.setAttribute('class', 'row')
 
         const colRightIcon = document.createElement('div')
-        colRightIcon.setAttribute('class', 'col-2')
+        colRightIcon.setAttribute('class', 'col-2 text-right')
 
         const iShifts = document.createElement('i')
-        iShifts.setAttribute('class', "far fa-clock text-center mt-1")
+        iShifts.setAttribute('class', "far fa-clock mt-1")
         iShifts.style.fontSize = '2.5rem'
 
         const colRightShifts = document.createElement('div')
@@ -476,15 +476,15 @@ window.onload = () => {
 
         // Left part appends | location - phone
         colLeft.appendChild(rowLeft)
-        rowLeft.appendChild(colLeftIcon)
-        colLeftIcon.appendChild(iLocation)
         rowLeft.appendChild(colLeftLocation)
         colLeftLocation.appendChild(h3MM)
         colLeftLocation.appendChild(pAdress)
-        rowLeft.appendChild(colLeftPhoneI)
-        colLeftPhoneI.appendChild(iPhone)
+        rowLeft.appendChild(colLeftIcon)
+        colLeftIcon.appendChild(iLocation)
         rowLeft.appendChild(colLeftPhone)
         colLeftPhone.appendChild(h3Phone)
+        rowLeft.appendChild(colLeftPhoneI)
+        colLeftPhoneI.appendChild(iPhone)
 
         // Right part appends | shifts
         colRight.appendChild(rowRight)
@@ -500,7 +500,7 @@ window.onload = () => {
     }
     function mapParis(container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row my-4')
+        row.setAttribute('class', 'row mt-4 mb-5 pb-4')
 
         const col = document.createElement('div')
         col.setAttribute('class', 'col')
@@ -552,10 +552,10 @@ window.onload = () => {
         rowLeft.setAttribute('class', 'row')
 
         const colLeftIcon = document.createElement('div')
-        colLeftIcon.setAttribute('class', 'col-2')
+        colLeftIcon.setAttribute('class', 'col-2 text-left')
 
         const iLocation = document.createElement('i')
-        iLocation.setAttribute('class', "fas fa-map-marker-alt text-center mt-1")
+        iLocation.setAttribute('class', "fas fa-map-marker-alt mt-1")
         iLocation.style.fontSize = '2.5rem'
 
         const colLeftLocation = document.createElement('div')
@@ -563,16 +563,16 @@ window.onload = () => {
 
         const h3MM = document.createElement('h3')
         h3MM.textContent = "Mamma Mia | Montreal"
-        h3MM.setAttribute('class', 'text-left')
+        h3MM.setAttribute('class', 'text-right')
         const pAdress = document.createElement('p')
         pAdress.textContent = "Boulevard Robert-Bourassa 1165, Montréal, QC H3B 1S5"
-        pAdress.setAttribute('class', 'text-left')
+        pAdress.setAttribute('class', 'text-right')
 
         const colLeftPhoneI = document.createElement('div')
-        colLeftPhoneI.setAttribute('class', 'col-2')
+        colLeftPhoneI.setAttribute('class', 'col-2 text-left')
 
         const iPhone = document.createElement('i')
-        iPhone.setAttribute('class', "fas fa-phone text-center mt-1")
+        iPhone.setAttribute('class', "fas fa-phone mt-1")
         iPhone.style.fontSize = '2rem'
 
         const colLeftPhone = document.createElement('div')
@@ -580,7 +580,7 @@ window.onload = () => {
 
         const h3Phone = document.createElement('h3')
         h3Phone.textContent = "+1-438-555-5555"
-        h3Phone.setAttribute('class', 'text-left')
+        h3Phone.setAttribute('class', 'text-right')
 
         // right col js init
         const colRight = document.createElement('div')
@@ -590,10 +590,10 @@ window.onload = () => {
         rowRight.setAttribute('class', 'row')
 
         const colRightIcon = document.createElement('div')
-        colRightIcon.setAttribute('class', 'col-2')
+        colRightIcon.setAttribute('class', 'col-2 text-right')
 
         const iShifts = document.createElement('i')
-        iShifts.setAttribute('class', "far fa-clock text-center mt-1")
+        iShifts.setAttribute('class', "far fa-clock mt-1")
         iShifts.style.fontSize = '2.5rem'
 
         const colRightShifts = document.createElement('div')
@@ -621,15 +621,15 @@ window.onload = () => {
 
         // Left part appends | location - phone
         colLeft.appendChild(rowLeft)
-        rowLeft.appendChild(colLeftIcon)
-        colLeftIcon.appendChild(iLocation)
         rowLeft.appendChild(colLeftLocation)
         colLeftLocation.appendChild(h3MM)
         colLeftLocation.appendChild(pAdress)
-        rowLeft.appendChild(colLeftPhoneI)
-        colLeftPhoneI.appendChild(iPhone)
+        rowLeft.appendChild(colLeftIcon)
+        colLeftIcon.appendChild(iLocation)
         rowLeft.appendChild(colLeftPhone)
         colLeftPhone.appendChild(h3Phone)
+        rowLeft.appendChild(colLeftPhoneI)
+        colLeftPhoneI.appendChild(iPhone)
 
         // Right part appends | shifts
         colRight.appendChild(rowRight)
@@ -645,7 +645,7 @@ window.onload = () => {
     }
     function mapMontreal(container) {
         const row = document.createElement('div')
-        row.setAttribute('class', 'row my-4')
+        row.setAttribute('class', 'row mt-4 mb-5 pb-4')
 
         const col = document.createElement('div')
         col.setAttribute('class', 'col')
@@ -663,6 +663,6 @@ window.onload = () => {
         return container
     }
 
-    var name = prompt('Bonjour, quel est votre nom ?')
-    document.querySelector('#name').textContent = "Bonjour " + name
+    // var name = prompt('Bonjour, quel est votre nom ?')
+    // document.querySelector('#name').textContent = "Bonjour " + name
 }
