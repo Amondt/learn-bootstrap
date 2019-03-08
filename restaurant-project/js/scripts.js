@@ -17,6 +17,10 @@ window.onload = () => {
     const navRestaurants = document.querySelector('#navRestaurants')
     const navContact = document.querySelector('#navContact')
 
+    $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        $(this).toggleClass('open')
+    })
+
     document.body.addEventListener('scroll', function(e) {
         console.log()
         if (e.target.scrollTop > 300) {
