@@ -17,7 +17,7 @@ window.onload = () => {
     const navRestaurants = document.querySelector('#navRestaurants')
     const navContact = document.querySelector('#navContact')
 
-    $('#nav-icon0,#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $('#nav-icon3').click(function(){
         $(this).toggleClass('open')
     })
 
@@ -49,7 +49,6 @@ window.onload = () => {
         }
     })
     
-
     $(".navbar-nav .nav-link").on("click", function(){
         $(".navbar-nav").find(".active").removeClass("active")
         $(this).addClass("active")
@@ -143,7 +142,26 @@ window.onload = () => {
     document.querySelector('#montreal').addEventListener('click', montrealDisplay)
 
     // Header restaurant pages display
+    function testOpenClose () {
+        let d = new Date()
+        let opCl = ''
+        if (d.getDay() >= 1 && d.getDay() <= 5) {
+            if ((d.getHours() >= 12 && d.getHours() < 15) || (d.getHours() >= 19 && d.getHours() < 23)) {
+                opCl = "ouvert"
+            } else {
+                opCl = "fermé"
+            }
+        } else if (d.getDay() == 6) {
+            if (d.getHours() >= 19 && d.getHours() < 23) {
+                opCl = "ouvert"
+            } else {
+                opCl = "fermé"
+            }
+        }
+        return opCl
+    }
     function imagesLinkHeader (container) {
+
         const row = document.createElement('div')
         row.setAttribute('class', 'row')
 
@@ -183,14 +201,14 @@ window.onload = () => {
         const colDate = document.createElement('div')
         colDate.setAttribute('class', 'col-12 text-center mt-4')
         // Date insert
-        const openClose = "ouvert"
         var d = new Date()
+        const openClose = testOpenClose()
+        // openClose = testOpenClose(openClose)
         var months = ["janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre"];
         const pDate = document.createElement('p')
         pDate.textContent = "nous sommes le " + d.getDate() + " " + months[d.getMonth()]
-        testOpenClose(openClose)
         const pOpCl = document.createElement('p')
-        pOpCl.textContent = "le re  staurant est " + openClose
+        pOpCl.textContent = "le restaurant est " + openClose
 
         linkB.appendChild(brussels)
         linkP.appendChild(paris)
@@ -207,29 +225,7 @@ window.onload = () => {
 
         container.appendChild(row)
 
-        setInterval(function () {
-            testOpenClose(openClose)
-            pOpCl.textContent = "le restaurant est " + openClose
-        }, 50)
-
         return container
-    }
-    function testOpenClose (openClose) {
-        var d = new Date()
-        if (d.getDay() >= 1 && d.getDay() <= 5) {
-            if ((d.getHours() >= 12 && d.getHours() <= 15) || (d.getHours() >= 19 && d.getHours() <= 23)) {
-                openClose = "ouvert"
-            } else {
-                openClose = "fermé"
-            }
-        } else if (d.getDay() == 6) {
-            if (d.getHours() >= 19 && d.getHours() <= 23) {
-                openClose = "ouvert"
-            } else {
-                openClose = "fermé"
-            }
-        }
-        return openClose
     }
 
     // Brussels displays
@@ -667,6 +663,6 @@ window.onload = () => {
         return container
     }
 
-    // var name = prompt('Bonjour, quel est votre nom ?')
-    // document.querySelector('#name').textContent = "Bonjour " + name
+    var name = prompt('Bonjour, quel est votre nom ?')
+    document.querySelector('#name').textContent = "Bonjour " + name
 }
