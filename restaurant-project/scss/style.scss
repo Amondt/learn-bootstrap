@@ -175,6 +175,12 @@ h1, h2, h3, h4, h5, h6 {
 .bg-white {
     background: #fdfdfd;
 }
+@media only screen and (max-width:460px) {
+    #about {
+        background-image: none;
+        height: auto;
+    }
+}
 
 // #Menu
 #menu {

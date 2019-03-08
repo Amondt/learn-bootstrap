@@ -193,6 +193,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #fdfdfd;
 }
 
+@media only screen and (max-width: 460px) {
+  #about {
+    background-image: none;
+    height: auto;
+  }
+}
 #menu {
   margin: 75px 20px 50px 20px;
   padding-top: 64px !important;
